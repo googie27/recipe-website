@@ -1,0 +1,9 @@
+html {
+    background: url(./images/chicago-flag.webp) no-repeat center fixed;
+    background-size: cover;
+  }
+
+#mainimg {
+    max-width: 50%;
+    height: auto;
+  }
