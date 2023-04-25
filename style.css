@@ -46,3 +46,35 @@ b{
     width: auto;
     margin: 15px;
 }
+
+.leftcolumn{
+    background-color: white;
+    opacity: 85%;
+    border-radius: 10px;
+    width: 40%;
+    padding: 10px;
+    padding-left: 20px;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.rightcolumn{
+    background-color: white;
+    opacity: 85%;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    padding-left: 25px;
+    float: left;
+}
+
+footer{
+    text-align: center;
+    width: auto;
+    padding-top: 10%;
+}
+
+li {
+    font-size: 18px;
+}
