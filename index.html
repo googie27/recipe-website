@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicago</title>
-</head>
-<body>
-    <header>Welcome to Chicago!</header>
+    <title>Recipes of Chicago</title>
+  </head>
+  
+  <body>
 
-    <nav>
-        <p>Try these recipes:</p>
-        <p><a href="recipes/italian-beef.html">Italian Beef</a></p>
-        <p><a href="recipes/deep-dish-pizza.html">Deep Dish Pizza</a></p>
-        <p><a href="recipes/hot-dog.html">Chicago Style Hot Dog</a></p>
+    <nav id='navbar'>
+      <p id='try'>Try these recipes:</p>
+      <ul id='nav-links'>
+        <li>
+          <a href="recipes/italian-beef.html" id='link'>Italian Beef</a>
+        </li>
+        <li>
+          <a href="recipes/deep-dish-pizza.html" id='link'>Deep Dish Pizza</a>
+        </li>
+        <li>
+          <a href="recipes/hot-dog.html" id='link'>Chicago Style Hot Dog</a> 
+        </li>
+      </ul>
     </nav>
 
-    <section>
-        <img src="images/skyline.jpg" id="mainimg">
+    <main>
+      <header>Welcome to Chicago!</header>
+    
+      <section id='chicago'>
+        <img src="images/skyline.jpg" alt='Chicago skyline' id="main-img">
 
-        <b>
+        <b id='about'>
             "A drive across Chicago’s lively immigrant neighbourhoods is a trip around the world: the cultures of virtually every country can be found in food stores, restaurants, clothing shops, music and video dealers, places of worship, and street-corner conversations." - <a href="https://www.britannica.com/place/Chicago#ref61245">Britannica.</a>
             Chicago is a very diverse city with many cultures coming together, and therefore having a great variety of food.
             There are, however, a few dishes that are considered uniquely Chicagoan.
             Here you can find a recipe of a few of the most recognized ones to be able to make at home!
-        </b>
-    </section>
-</body>
+          </b>
+      </section>
+    </main>
+  </body>
 </html>

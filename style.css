@@ -1,50 +1,73 @@
-html {
-    background: url(./images/chicago-flag.webp) no-repeat center fixed;
-    background-size: cover;
-  }
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: ghostwhite;
+    border-top: 15px solid lightskyblue;
+    border-bottom: 15px solid lightskyblue;
+}
 
-#mainimg {
-    max-width: 40%;
-    height: auto;
-    opacity: 85%;
-    border-radius: 10px;
-    margin: 10px;
-  }
+#try {
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    margin-top: 25px;
+    list-style-type: none;
+}
+
+#link {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    color: black;
+    font-size: 24px;
+}
+
+#link:hover {
+    background-color: #ff3333;
+    color: ghostwhite;
+}
+
+main {
+    margin-top: 150px;
+}
 
 header {
     text-align: center;
     font-size: 80px;
+    padding: 20px;
 }
 
-nav {
-    font-size: 24px;
+#chicago {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
-    opacity: 80%;
-    border-radius: 25px;
-    border: 4px solid lightskyblue;
-    padding-bottom: 25px;
-    width: auto;
-    height: 48px
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 5%;
+#main-img {
+    width: 50vw;
+    height: auto;
+  }
+
+#about {
+    width: 40vw;
+    height: auto;
+    line-height: 1.5;
     padding: 10px;
-}
-
-b{
-    font-size: 18px;
-    background-color: white;
-    opacity: 80%;
-    border-radius: 10px;
-    width: auto;
-    margin: 15px;
+    border: 5px solid lightskyblue;
 }
 
 .leftcolumn{
@@ -77,4 +100,42 @@ footer{
 
 li {
     font-size: 18px;
+}
+
+@media (max-width: 700px) {
+    #main-img {
+        width: 90vw;
+    }
+
+    #about {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 570px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #try {
+        margin: 5px auto;
+        font-size: 16px;
+    }
+
+    #nav-links {
+        display: flex;
+        justify-content: center;
+        line-height: 2;
+        margin: 0;
+        padding-right: 40px;
+    }
+
+    main {
+        margin-top: 200px;
+    }
+
+    header {
+        font-size: 50px;
+    }
 }
