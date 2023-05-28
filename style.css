@@ -48,9 +48,8 @@ header {
     padding: 20px;
 }
 
-#chicago {
+#chicago, #content {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -66,48 +65,33 @@ header {
     width: 40vw;
     height: auto;
     line-height: 1.5;
-    padding: 10px;
+    padding: 100px 20px;
     border: 5px solid lightskyblue;
 }
 
-.leftcolumn{
-    background-color: white;
-    opacity: 85%;
-    border-radius: 10px;
-    width: 40%;
-    padding: 10px;
-    padding-left: 20px;
-    float: left;
-    margin-right: 2%;
-    margin-left: 2%;
+#food {
+    border-radius: 50%;
 }
 
-.rightcolumn{
-    background-color: white;
-    opacity: 85%;
-    border-radius: 10px;
-    width: 50%;
-    padding: 10px;
-    padding-left: 25px;
-    float: left;
+#ingredients {
+    width: 40vw;
+    height: auto;
+}
+
+#directions {
+    width: 40vw;
+    height: auto;
 }
 
 footer{
     text-align: center;
-    width: auto;
-    padding-top: 10%;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
 }
 
-li {
-    font-size: 18px;
-}
-
-@media (max-width: 700px) {
-    #main-img {
-        width: 90vw;
-    }
-
-    #about {
+@media (max-width: 860px) {
+    #main-img, #about {
         width: 90vw;
     }
 }
@@ -137,5 +121,18 @@ li {
 
     header {
         font-size: 50px;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ingredients {
+        width: 50vw;
+    }
+
+    #directions {
+        width: 90vw;
     }
 }
